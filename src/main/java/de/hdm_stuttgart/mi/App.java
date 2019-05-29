@@ -19,7 +19,9 @@ public class App {
      * @param args Yet unused
      */
     public static void main( String[] args ) {
+        int[] array = new int[5];
         System.out.println( "Tobi schaue jetzt mal zu!" );
+
         
         log.debug("You may configure 'src/main/resources/log4j2.xml' ");
         log.debug("for adapting both console and 'A1.log' file output");
