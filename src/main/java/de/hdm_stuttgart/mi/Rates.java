@@ -1,4 +1,4 @@
-package de.hdm_stuttgart;
+package de.hdm_stuttgart.mi;
 
 public class Rates {
  private float EUR;

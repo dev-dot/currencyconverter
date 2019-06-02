@@ -1,13 +1,11 @@
-package de.hdm_stuttgart;
-
-
+package de.hdm_stuttgart.mi;
 
 public class Currency {
 
     private String base;
     private String date;
     private float time_last_updated;
-    Rates RatesObject;
+    private Rates RatesObject;
 
 
     // Getter Methods
