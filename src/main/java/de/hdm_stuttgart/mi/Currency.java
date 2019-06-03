@@ -1,14 +1,17 @@
 package de.hdm_stuttgart.mi;
 
+import java.util.List;
+
 public class Currency {
 
     private String base;
     private String date;
-    private float time_last_updated;
-    private Rates RatesObject;
+    private long time_last_updated;
+
+    private Rates rates;
 
 
-    // Getter Methods
+// Getter Methods
 
     public String getBase() {
         return base;
@@ -18,13 +21,14 @@ public class Currency {
         return date;
     }
 
-    public float getTime_last_updated() {
+    public long getTime_last_updated() {
         return time_last_updated;
     }
 
     public Rates getRates() {
-        return RatesObject;
+        return rates;
     }
+
 
     // Setter Methods
 
@@ -36,12 +40,12 @@ public class Currency {
         this.date = date;
     }
 
-    public void setTime_last_updated(float time_last_updated) {
+    public void setTime_last_updated(long time_last_updated) {
         this.time_last_updated = time_last_updated;
     }
 
-    public void setRates(Rates ratesObject) {
-        this.RatesObject = ratesObject;
+    public void setRates(Rates rates) {
+        this.rates = rates;
     }
 
 

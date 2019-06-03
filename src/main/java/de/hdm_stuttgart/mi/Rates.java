@@ -1,7 +1,9 @@
 package de.hdm_stuttgart.mi;
 
 public class Rates {
- private float EUR;
+
+
+    private float EUR;
  private float AED;
  private float ARS;
  private float AUD;
@@ -474,4 +476,10 @@ public class Rates {
  public void setZAR(float ZAR) {
   this.ZAR = ZAR;
  }
+
+    @Override
+    public String toString() {
+        return
+                "AED=" + AED;
+    }
 }
