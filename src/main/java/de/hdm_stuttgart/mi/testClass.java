@@ -1,3 +1,4 @@
+/*
 package de.hdm_stuttgart.mi;
 
 
@@ -52,3 +53,4 @@ public class testClass {
     }
 }
 
+*/

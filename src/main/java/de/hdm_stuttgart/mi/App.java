@@ -1,40 +1,35 @@
 package de.hdm_stuttgart.mi;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-
-/**
- * A simple http://logging.apache.org/log4j/2.x demo,
- * see file resources/log4j2.xml for configuration options
- * and A1.log containing debugging output.
- */
+import com.google.gson.Gson;
+import java.io.IOException;
+import java.util.Scanner;
 
 public class App {
-    private static Logger log = LogManager.getLogger(App.class);
 
-    /**
-     * Your application's main entry point.
-     *
-     * @param args Yet unused
-     */
-    public static void main( String[] args ) {
-        int[] array = new int[5];
-        System.out.println( "Tobi schaue jetzt mal zu!" );
+    public static Currency testObj;
 
-        
-        log.debug("You may configure 'src/main/resources/log4j2.xml' ");
-        log.debug("for adapting both console and 'A1.log' file output");
-    }
+    public static void main(String[] args) throws IOException {
 
-    /**
-     * This method purely exists for providing Junit tests.
-     *
-     * @param a first parameter
-     * @param b second parameter
-     * @return the sum of both parameters.
-     */
-    public static int add(final int a, final int b) {
-        return a + b;
+        Scanner input = new Scanner(System.in);
+        Gson gson = new Gson();
+
+
+        System.out.println("Bitte geben Sie ein Währung ein");
+        String currency = input.next();
+
+        System.out.println("In welche Währung wollen Sie konvertieren?");
+        String tag = input.next();
+
+        System.out.println("Wie viel wollen Sie konvertieren?");
+        double amount = input.nextDouble();
+
+        testObj = gson.fromJson(URLConnection.getJsonobj(currency), Currency.class);
+        System.out.println(testObj.getBase());
+        System.out.println(testObj.getTime_last_updated());
+
+        System.out.println(Calculation.getCalculation(tag, amount));
+
+
+
     }
 }
