@@ -11,160 +11,160 @@ public class Calculation {
     public static float getCurrentRate(String tag){
         switch (tag){
             case "AED":
-                return App.testObj.getRates().getAED();
+                return AppRun.testObj.getRates().getAED();
 
             case "ARS":
-                return App.testObj.getRates().getARS();
+                return AppRun.testObj.getRates().getARS();
 
             case "AUD":
-                return App.testObj.getRates().getAUD();
+                return AppRun.testObj.getRates().getAUD();
 
             case "BGN":
-                return App.testObj.getRates().getBGN();
+                return AppRun.testObj.getRates().getBGN();
 
             case "BRL":
-                return App.testObj.getRates().getBRL();
+                return AppRun.testObj.getRates().getBRL();
 
             case "BSD":
-                return App.testObj.getRates().getBSD();
+                return AppRun.testObj.getRates().getBSD();
 
             case "CAD":
-                return App.testObj.getRates().getCAD();
+                return AppRun.testObj.getRates().getCAD();
 
             case "CHF":
-                return App.testObj.getRates().getCHF();
+                return AppRun.testObj.getRates().getCHF();
 
             case "CLP":
-                return App.testObj.getRates().getCLP();
+                return AppRun.testObj.getRates().getCLP();
 
             case "CNY":
-                return App.testObj.getRates().getCNY();
+                return AppRun.testObj.getRates().getCNY();
 
             case "COP":
-                return App.testObj.getRates().getCOP();
+                return AppRun.testObj.getRates().getCOP();
 
             case "CZK":
-                return App.testObj.getRates().getCZK();
+                return AppRun.testObj.getRates().getCZK();
 
             case "DKK":
-                return App.testObj.getRates().getDKK();
+                return AppRun.testObj.getRates().getDKK();
 
             case "DOP":
-                return App.testObj.getRates().getDOP();
+                return AppRun.testObj.getRates().getDOP();
 
             case "EGP":
-                return App.testObj.getRates().getEGP();
+                return AppRun.testObj.getRates().getEGP();
 
             case "EUR":
-                return App.testObj.getRates().getEUR();
+                return AppRun.testObj.getRates().getEUR();
 
             case "FJD":
-                return App.testObj.getRates().getFJD();
+                return AppRun.testObj.getRates().getFJD();
 
             case "GBP":
-                return App.testObj.getRates().getGBP();
+                return AppRun.testObj.getRates().getGBP();
 
             case "GTQ":
-                return App.testObj.getRates().getGTQ();
+                return AppRun.testObj.getRates().getGTQ();
 
             case "HKD":
-                return App.testObj.getRates().getHKD();
+                return AppRun.testObj.getRates().getHKD();
 
             case "HRK":
-                return App.testObj.getRates().getHRK();
+                return AppRun.testObj.getRates().getHRK();
 
             case "HUF":
-                return App.testObj.getRates().getHUF();
+                return AppRun.testObj.getRates().getHUF();
 
             case "IDR":
-                return App.testObj.getRates().getIDR();
+                return AppRun.testObj.getRates().getIDR();
 
             case "ILS":
-                return App.testObj.getRates().getILS();
+                return AppRun.testObj.getRates().getILS();
 
             case "INR":
-                return App.testObj.getRates().getINR();
+                return AppRun.testObj.getRates().getINR();
 
             case "ISK":
-                return App.testObj.getRates().getISK();
+                return AppRun.testObj.getRates().getISK();
 
             case "JPY":
-                return App.testObj.getRates().getJPY();
+                return AppRun.testObj.getRates().getJPY();
 
             case "KRW":
-                return App.testObj.getRates().getKRW();
+                return AppRun.testObj.getRates().getKRW();
 
             case "KZT":
-                return App.testObj.getRates().getKZT();
+                return AppRun.testObj.getRates().getKZT();
 
             case "MXN":
-                return App.testObj.getRates().getMXN();
+                return AppRun.testObj.getRates().getMXN();
 
             case "MYR":
-                return App.testObj.getRates().getMYR();
+                return AppRun.testObj.getRates().getMYR();
 
             case "NOK":
-                return App.testObj.getRates().getNOK();
+                return AppRun.testObj.getRates().getNOK();
 
             case "NZD":
-                return App.testObj.getRates().getNZD();
+                return AppRun.testObj.getRates().getNZD();
 
             case "PAB":
-                return App.testObj.getRates().getPAB();
+                return AppRun.testObj.getRates().getPAB();
 
             case "PEN":
-                return App.testObj.getRates().getPEN();
+                return AppRun.testObj.getRates().getPEN();
 
             case "PHP":
-                return App.testObj.getRates().getPHP();
+                return AppRun.testObj.getRates().getPHP();
 
             case "PKR":
-                return App.testObj.getRates().getPKR();
+                return AppRun.testObj.getRates().getPKR();
 
             case "PLN":
-                return App.testObj.getRates().getPLN();
+                return AppRun.testObj.getRates().getPLN();
 
             case "PYG":
-                return App.testObj.getRates().getPYG();
+                return AppRun.testObj.getRates().getPYG();
 
             case "RON":
-                return App.testObj.getRates().getRON();
+                return AppRun.testObj.getRates().getRON();
 
             case "RUB":
-                return App.testObj.getRates().getRUB();
+                return AppRun.testObj.getRates().getRUB();
 
             case "SAR":
-                return App.testObj.getRates().getSAR();
+                return AppRun.testObj.getRates().getSAR();
 
             case "SEK":
-                return App.testObj.getRates().getSEK();
+                return AppRun.testObj.getRates().getSEK();
 
             case "SGD":
-                return App.testObj.getRates().getSGD();
+                return AppRun.testObj.getRates().getSGD();
 
             case "THB":
-                return App.testObj.getRates().getTHB();
+                return AppRun.testObj.getRates().getTHB();
 
             case "TRY":
-                return App.testObj.getRates().getTRY();
+                return AppRun.testObj.getRates().getTRY();
 
             case "TWD":
-                return App.testObj.getRates().getTWD();
+                return AppRun.testObj.getRates().getTWD();
 
             case "UAH":
-                return App.testObj.getRates().getUAH();
+                return AppRun.testObj.getRates().getUAH();
 
             case "USD":
-                return App.testObj.getRates().getUSD();
+                return AppRun.testObj.getRates().getUSD();
 
             case "UYU":
-                return App.testObj.getRates().getUYU();
+                return AppRun.testObj.getRates().getUYU();
 
             case "VND":
-                return App.testObj.getRates().getVND();
+                return AppRun.testObj.getRates().getVND();
 
             case "ZAR":
-                return App.testObj.getRates().getZAR();
+                return AppRun.testObj.getRates().getZAR();
 
             default:
                 return 0.0F;

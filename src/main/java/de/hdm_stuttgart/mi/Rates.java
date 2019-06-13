@@ -2,7 +2,7 @@ package de.hdm_stuttgart.mi;
 
 public class Rates {
 
-    private float EUR;
+ private float EUR;
  private float AED;
  private float ARS;
  private float AUD;

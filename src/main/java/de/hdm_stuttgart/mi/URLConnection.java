@@ -35,7 +35,5 @@ public class URLConnection {
 
         return jsonobj;
 
-
-
     }
 }

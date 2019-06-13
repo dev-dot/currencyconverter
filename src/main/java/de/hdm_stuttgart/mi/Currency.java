@@ -44,9 +44,5 @@ public class Currency {
         this.time_last_updated = time_last_updated;
     }
 
-    public void setRates(Rates rates) {
-        this.rates = rates;
-    }
-
-
+    public void setRates(Rates rates) {this.rates = rates; }
 }
