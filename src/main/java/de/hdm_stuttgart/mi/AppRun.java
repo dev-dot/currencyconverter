@@ -28,14 +28,14 @@ public class AppRun {
 
 //--------------------------------------- start of loop --------------------------------------------------------
         while (!exit) {
-            print.clearConsole();
+            Print.clearConsole();
             if (!bothcurrencies) {                                  // if not both currencies are set, a different menu will be displayed
-                print.Startmenu(fromcurrency,tocurrency);
+                Print.Startmenu(fromcurrency, tocurrency);
                 entry = input.next();
                 input.reset();
                 switch (entry) {                                    // a switch statement helps with easier navigation through the menu
                     case "0":
-                        print.commandCurrency();
+                        Print.commandCurrency();
                         entry = input.next();
                         input.reset();
                         if (entry.equalsIgnoreCase("xxx")) {
@@ -47,7 +47,7 @@ public class AppRun {
                         }
                         break;
                     case "1":
-                        print.commandCurrency();
+                        Print.commandCurrency();
                         entry = input.next();
                         input.reset();
                         if (entry.equalsIgnoreCase("xxx")) {
@@ -60,7 +60,7 @@ public class AppRun {
 
                         break;
                     case "2":
-                        print.commandAmount();
+                        Print.commandAmount();
                         amounttobuy = input.nextDouble();
                         input.reset();
                         break;
@@ -75,13 +75,13 @@ public class AppRun {
                 }
             } else                                                     // both currencies have been set
             {   amountToBuyNotNull();
-                print.CalculatorMenu(fromcurrency,tocurrency,amounttobuy,amounttosell);
+                Print.CalculatorMenu(fromcurrency, tocurrency, amounttobuy, amounttosell);
                 entry = input.next();
                 input.reset();
 
                 switch (entry) {
                     case "0":
-                        print.commandCurrency();
+                        Print.commandCurrency();
                         entry = input.next();
                         input.reset();
                         if (entry.equalsIgnoreCase("xxx")) {
@@ -89,7 +89,7 @@ public class AppRun {
                         setBuyingCurrency(entry);}
                     break;
                     case "1":
-                        print.commandCurrency();
+                        Print.commandCurrency();
                         entry = input.next();
                         input.reset();
                         if (entry.equalsIgnoreCase("xxx")) {
@@ -99,7 +99,7 @@ public class AppRun {
                     case "2":
                         Gson gson = new Gson();
                         testObj = gson.fromJson(URLConnection.getJsonobj(buyTag), Currency.class);
-                        print.commandAmount();
+                        Print.commandAmount();
                         amounttobuy = input.nextDouble();
                         amounttosell = Calculation.getCalculation(sellTag,  amounttobuy);
                     break;
@@ -121,8 +121,8 @@ public class AppRun {
 //      full name equal the given String.
 
         public static void setBuyingCurrency(String entry){
-            if(print.getChoice(entry).length > 0){
-                selectedCurrency = print.selection(print.getChoice(entry), fromcurrency,tocurrency);
+            if (Print.getChoice(entry).length > 0) {
+                selectedCurrency = Print.selection(Print.getChoice(entry), fromcurrency, tocurrency);
                 fromcurrency = selectedCurrency.getFullname();
                 buyTag = selectedCurrency.getTag();
             } else {
@@ -133,8 +133,8 @@ public class AppRun {
         }
 
         public static void setSellingCurrency(String entry){
-            if(print.getChoice(entry).length > 0){
-                selectedCurrency = print.selection(print.getChoice(entry),fromcurrency,tocurrency);
+            if (Print.getChoice(entry).length > 0) {
+                selectedCurrency = Print.selection(Print.getChoice(entry), fromcurrency, tocurrency);
                 tocurrency = selectedCurrency.getFullname();
                 sellTag = selectedCurrency.getTag();
             }else {

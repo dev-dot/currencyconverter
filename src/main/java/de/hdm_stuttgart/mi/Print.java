@@ -4,11 +4,11 @@ import java.text.*;
 import java.util.Scanner;
 
 
-public class print {
+public class Print {
 
     //  f. in front of a double variable will only show 2 decimal place
 
-    public static DecimalFormat f = new DecimalFormat("#0.00");
+    private static DecimalFormat f = new DecimalFormat("#0.00");
 
     public static void Startmenu(String fromcurrency, String tocurrency){
         upperMenuCurrencies(fromcurrency,tocurrency);
@@ -20,19 +20,19 @@ public class print {
         lowerMenuCommands();
     }
 
-    public static void upperMenuCurrencies(String fromcurrency, String tocurrency){
+    private static void upperMenuCurrencies(String fromcurrency, String tocurrency) {
         System.out.println( "Currency to buy: " + fromcurrency);
         System.out.println( "Currency to sell: " + tocurrency);
         System.out.println( "+++++++++++++++++++++++++++++++++++");
     }
 
-    public static void upperMenuCalculator(String fromcurrency, String tocurrency, double amounttobuy, double amounttosell){
+    private static void upperMenuCalculator(String fromcurrency, String tocurrency, double amounttobuy, double amounttosell) {
         System.out.println( "Buying " + f.format(amounttobuy) + " of " + fromcurrency);
         System.out.println( "Selling " + f.format(amounttosell) + " of " + tocurrency);
         System.out.println( "+++++++++++++++++++++++++++++++++++");
     }
 
-    public static void lowerMenuCommands(){
+    private static void lowerMenuCommands() {
         System.out.println( "0: Select currency to buy\n" +
                             "1: Select currency to sell\n" +
                             "2: Choose amount to be converted:");
@@ -48,25 +48,10 @@ public class print {
         System.out.println("Enter a currency's name or part of it(>xxx< to exit): ");
     }
 
-    public final static void clearConsole()
+    public static void clearConsole()
     {
-        try
-        {
-            final String os = System.getProperty("os.name");
-
-            if (os.contains("Windows"))
-            {
-                Runtime.getRuntime().exec("cls");
-            }
-            else
-            {
-                Runtime.getRuntime().exec("clear");
-            }
-        }
-        catch (final Exception e)
-        {
-            //  Handle any exceptions.
-        }
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
     }
 
 //      getChoice looks for an equal String in a given array of Strings to the given String
