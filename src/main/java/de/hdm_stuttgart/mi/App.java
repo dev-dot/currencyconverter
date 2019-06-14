@@ -29,7 +29,5 @@ public class App {
 
         System.out.println(Calculation.getCalculation(tag, amount));
 
-
-
     }
 }

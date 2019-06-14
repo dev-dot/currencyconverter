@@ -5,25 +5,37 @@ import java.util.Scanner;
 
 
 public class print {
+
+    //  f. in front of a double variable will only show 2 decimal place
+
     public static DecimalFormat f = new DecimalFormat("#0.00");
 
     public static void Startmenu(String fromcurrency, String tocurrency){
-        System.out.println( "Currency to buy: " + fromcurrency);
-        System.out.println( "Currency to sell: " + tocurrency);
-        System.out.println( "+++++++++++++++++++++++++++++++++++");
-        System.out.println( "0: Select currency to buy\n" +
-                "1: Select currency to sell\n" +
-                "2: Choose amount to be converted:");
-        System.out.println( "Please choose an option (>x< to exit): ");
+        upperMenuCurrencies(fromcurrency,tocurrency);
+        lowerMenuCommands();
     }
 
     public static void CalculatorMenu(String fromcurrency, String tocurrency, double amounttobuy, double amounttosell){
+        upperMenuCalculator(fromcurrency,tocurrency,amounttobuy,amounttosell);
+        lowerMenuCommands();
+    }
+
+    public static void upperMenuCurrencies(String fromcurrency, String tocurrency){
+        System.out.println( "Currency to buy: " + fromcurrency);
+        System.out.println( "Currency to sell: " + tocurrency);
+        System.out.println( "+++++++++++++++++++++++++++++++++++");
+    }
+
+    public static void upperMenuCalculator(String fromcurrency, String tocurrency, double amounttobuy, double amounttosell){
         System.out.println( "Buying " + f.format(amounttobuy) + " of " + fromcurrency);
         System.out.println( "Selling " + f.format(amounttosell) + " of " + tocurrency);
         System.out.println( "+++++++++++++++++++++++++++++++++++");
+    }
+
+    public static void lowerMenuCommands(){
         System.out.println( "0: Select currency to buy\n" +
-                "1: Select currency to sell\n" +
-                "2: Choose amount to be converted:");
+                            "1: Select currency to sell\n" +
+                            "2: Choose amount to be converted:");
         System.out.println( "Please choose an option (>x< to exit): ");
     }
 
@@ -33,7 +45,7 @@ public class print {
     }
 
     public static void commandCurrency(){
-        System.out.println("Enter a currency's name or part of it(>xxx< to exit: ");
+        System.out.println("Enter a currency's name or part of it(>xxx< to exit): ");
     }
 
     public final static void clearConsole()
@@ -56,6 +68,9 @@ public class print {
             //  Handle any exceptions.
         }
     }
+
+//      getChoice looks for an equal String in a given array of Strings to the given String
+//      and returns if equal a preselected Currencies-array
 
     public static Currencies[] getChoice (String str) {
         Scanner input = new Scanner(System.in);
@@ -84,11 +99,15 @@ public class print {
         }
     }
 
+//      selection creates a new window and shows all the Currencies in an array with their index number
+//      After the user entered the wanted index number, the method returns that Currency-object for further
+//      implementation
 
-    public static Currencies selection (Currencies[] array){
+    public static Currencies selection (Currencies[] array,String fromcurrency, String tocurrency){
         Scanner input = new Scanner(System.in);
+        clearConsole();
+        upperMenuCurrencies(fromcurrency,tocurrency);
         if (array.length > 0){
-
             for (int i = 0;i<array.length;i++){
                 System.out.println(i + ": " + array[i].fullname);
             }
