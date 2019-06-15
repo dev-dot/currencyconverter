@@ -44,6 +44,10 @@ public class Print {
 
     }
 
+    public static void commandInput(){
+        System.out.println("Wrong input, please re-enter your currency: ");
+    }
+
     public static void commandCurrency(){
         System.out.println("Enter a currency's name or part of it(>xxx< to exit): ");
     }
