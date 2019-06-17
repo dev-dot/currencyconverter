@@ -9,7 +9,7 @@ public class AppRun {
 
 //  needed variables
 
-    public static Currency testObj;
+    public static Currency apiCurrencyObject;
     private static String buyTag = "";
     private static String sellTag = "";
     private static Currencies selectedCurrency;
@@ -61,7 +61,11 @@ public class AppRun {
                         break;
                     case "2":
                         Print.commandAmount();
-                        amounttobuy = input.nextDouble();
+                        try {
+                            amounttobuy = input.nextDouble();
+                        } catch (Exception e) {
+                            System.out.println("Wrong input");
+                        }
                         input.reset();
                         break;
                     case "x":
@@ -98,9 +102,13 @@ public class AppRun {
                     break;
                     case "2":
                         Gson gson = new Gson();
-                        testObj = gson.fromJson(URLConnection.getJsonobj(buyTag), Currency.class);
+                        apiCurrencyObject = gson.fromJson(URLConnection.getJsonobj(buyTag), Currency.class);
                         Print.commandAmount();
-                        amounttobuy = input.nextDouble();
+                        try {
+                            amounttobuy = input.nextDouble();
+                        } catch (Exception e) {
+                            System.out.println("Wrong input");
+                        }
                         amounttosell = Calculation.getCalculation(sellTag,  amounttobuy);
                     break;
                     case "x":
@@ -126,9 +134,9 @@ public class AppRun {
                 fromcurrency = selectedCurrency.getFullname();
                 buyTag = selectedCurrency.getTag();
             } else {
-                int index = AllCurrencies.getPosition(entry);
-                fromcurrency = AllCurrencies.all[index].getFullname();
-                buyTag = AllCurrencies.all[index].getTag();
+                int index = Currencies.getPosition(entry);
+                fromcurrency = Currencies.all[index].getFullname();
+                buyTag = Currencies.all[index].getTag();
             }
         }
 
@@ -138,9 +146,9 @@ public class AppRun {
                 tocurrency = selectedCurrency.getFullname();
                 sellTag = selectedCurrency.getTag();
             }else {
-                int index2 = AllCurrencies.getPosition(entry);
-                tocurrency = AllCurrencies.all[index2].getFullname();
-                sellTag = AllCurrencies.all[index2].getTag();
+                int index2 = Currencies.getPosition(entry);
+                tocurrency = Currencies.all[index2].getFullname();
+                sellTag = Currencies.all[index2].getTag();
             }
         }
 
@@ -151,7 +159,7 @@ public class AppRun {
         public static void amountToBuyNotNull() throws IOException {
             if(amounttobuy != 0) {
                 Gson gson = new Gson();
-                testObj = gson.fromJson(URLConnection.getJsonobj(buyTag), Currency.class);
+                apiCurrencyObject = gson.fromJson(URLConnection.getJsonobj(buyTag), Currency.class);
                 amounttosell = Calculation.getCalculation(sellTag,  amounttobuy);
             } else {}
         }

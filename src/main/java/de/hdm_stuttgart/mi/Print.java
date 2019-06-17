@@ -72,15 +72,15 @@ public class Print {
         switch (countId) {
             case 0:
             case 1:
-                return AllCurrencies.dol;
+                return Currencies.dol;
             case 2:
             case 3:
-                return AllCurrencies.pes;
+                return Currencies.pes;
             case 4:
             case 5:
-                return AllCurrencies.kro;
+                return Currencies.kro;
             default:
-                return AllCurrencies.empty;
+                return Currencies.empty;
         }
     }
 
@@ -100,12 +100,12 @@ public class Print {
             int entry = input.nextInt();
             input.reset();
             if (entry >= array.length || entry < 0){
-                return AllCurrencies.emptyCurrency;
+                return Currencies.emptyCurrency;
             }else {
                 return array[entry];
             }
         }else {
-            return AllCurrencies.emptyCurrency;
+            return Currencies.emptyCurrency;
         }
     }
 }
