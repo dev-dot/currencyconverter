@@ -11,160 +11,160 @@ public class Calculation {
     public static float getCurrentRate(String tag){
         switch (tag){
             case "AED":
-                return AppRun.testObj.getRates().getAED();
+                return AppRun.apiCurrencyObject.getRates().getAED();
 
             case "ARS":
-                return AppRun.testObj.getRates().getARS();
+                return AppRun.apiCurrencyObject.getRates().getARS();
 
             case "AUD":
-                return AppRun.testObj.getRates().getAUD();
+                return AppRun.apiCurrencyObject.getRates().getAUD();
 
             case "BGN":
-                return AppRun.testObj.getRates().getBGN();
+                return AppRun.apiCurrencyObject.getRates().getBGN();
 
             case "BRL":
-                return AppRun.testObj.getRates().getBRL();
+                return AppRun.apiCurrencyObject.getRates().getBRL();
 
             case "BSD":
-                return AppRun.testObj.getRates().getBSD();
+                return AppRun.apiCurrencyObject.getRates().getBSD();
 
             case "CAD":
-                return AppRun.testObj.getRates().getCAD();
+                return AppRun.apiCurrencyObject.getRates().getCAD();
 
             case "CHF":
-                return AppRun.testObj.getRates().getCHF();
+                return AppRun.apiCurrencyObject.getRates().getCHF();
 
             case "CLP":
-                return AppRun.testObj.getRates().getCLP();
+                return AppRun.apiCurrencyObject.getRates().getCLP();
 
             case "CNY":
-                return AppRun.testObj.getRates().getCNY();
+                return AppRun.apiCurrencyObject.getRates().getCNY();
 
             case "COP":
-                return AppRun.testObj.getRates().getCOP();
+                return AppRun.apiCurrencyObject.getRates().getCOP();
 
             case "CZK":
-                return AppRun.testObj.getRates().getCZK();
+                return AppRun.apiCurrencyObject.getRates().getCZK();
 
             case "DKK":
-                return AppRun.testObj.getRates().getDKK();
+                return AppRun.apiCurrencyObject.getRates().getDKK();
 
             case "DOP":
-                return AppRun.testObj.getRates().getDOP();
+                return AppRun.apiCurrencyObject.getRates().getDOP();
 
             case "EGP":
-                return AppRun.testObj.getRates().getEGP();
+                return AppRun.apiCurrencyObject.getRates().getEGP();
 
             case "EUR":
-                return AppRun.testObj.getRates().getEUR();
+                return AppRun.apiCurrencyObject.getRates().getEUR();
 
             case "FJD":
-                return AppRun.testObj.getRates().getFJD();
+                return AppRun.apiCurrencyObject.getRates().getFJD();
 
             case "GBP":
-                return AppRun.testObj.getRates().getGBP();
+                return AppRun.apiCurrencyObject.getRates().getGBP();
 
             case "GTQ":
-                return AppRun.testObj.getRates().getGTQ();
+                return AppRun.apiCurrencyObject.getRates().getGTQ();
 
             case "HKD":
-                return AppRun.testObj.getRates().getHKD();
+                return AppRun.apiCurrencyObject.getRates().getHKD();
 
             case "HRK":
-                return AppRun.testObj.getRates().getHRK();
+                return AppRun.apiCurrencyObject.getRates().getHRK();
 
             case "HUF":
-                return AppRun.testObj.getRates().getHUF();
+                return AppRun.apiCurrencyObject.getRates().getHUF();
 
             case "IDR":
-                return AppRun.testObj.getRates().getIDR();
+                return AppRun.apiCurrencyObject.getRates().getIDR();
 
             case "ILS":
-                return AppRun.testObj.getRates().getILS();
+                return AppRun.apiCurrencyObject.getRates().getILS();
 
             case "INR":
-                return AppRun.testObj.getRates().getINR();
+                return AppRun.apiCurrencyObject.getRates().getINR();
 
             case "ISK":
-                return AppRun.testObj.getRates().getISK();
+                return AppRun.apiCurrencyObject.getRates().getISK();
 
             case "JPY":
-                return AppRun.testObj.getRates().getJPY();
+                return AppRun.apiCurrencyObject.getRates().getJPY();
 
             case "KRW":
-                return AppRun.testObj.getRates().getKRW();
+                return AppRun.apiCurrencyObject.getRates().getKRW();
 
             case "KZT":
-                return AppRun.testObj.getRates().getKZT();
+                return AppRun.apiCurrencyObject.getRates().getKZT();
 
             case "MXN":
-                return AppRun.testObj.getRates().getMXN();
+                return AppRun.apiCurrencyObject.getRates().getMXN();
 
             case "MYR":
-                return AppRun.testObj.getRates().getMYR();
+                return AppRun.apiCurrencyObject.getRates().getMYR();
 
             case "NOK":
-                return AppRun.testObj.getRates().getNOK();
+                return AppRun.apiCurrencyObject.getRates().getNOK();
 
             case "NZD":
-                return AppRun.testObj.getRates().getNZD();
+                return AppRun.apiCurrencyObject.getRates().getNZD();
 
             case "PAB":
-                return AppRun.testObj.getRates().getPAB();
+                return AppRun.apiCurrencyObject.getRates().getPAB();
 
             case "PEN":
-                return AppRun.testObj.getRates().getPEN();
+                return AppRun.apiCurrencyObject.getRates().getPEN();
 
             case "PHP":
-                return AppRun.testObj.getRates().getPHP();
+                return AppRun.apiCurrencyObject.getRates().getPHP();
 
             case "PKR":
-                return AppRun.testObj.getRates().getPKR();
+                return AppRun.apiCurrencyObject.getRates().getPKR();
 
             case "PLN":
-                return AppRun.testObj.getRates().getPLN();
+                return AppRun.apiCurrencyObject.getRates().getPLN();
 
             case "PYG":
-                return AppRun.testObj.getRates().getPYG();
+                return AppRun.apiCurrencyObject.getRates().getPYG();
 
             case "RON":
-                return AppRun.testObj.getRates().getRON();
+                return AppRun.apiCurrencyObject.getRates().getRON();
 
             case "RUB":
-                return AppRun.testObj.getRates().getRUB();
+                return AppRun.apiCurrencyObject.getRates().getRUB();
 
             case "SAR":
-                return AppRun.testObj.getRates().getSAR();
+                return AppRun.apiCurrencyObject.getRates().getSAR();
 
             case "SEK":
-                return AppRun.testObj.getRates().getSEK();
+                return AppRun.apiCurrencyObject.getRates().getSEK();
 
             case "SGD":
-                return AppRun.testObj.getRates().getSGD();
+                return AppRun.apiCurrencyObject.getRates().getSGD();
 
             case "THB":
-                return AppRun.testObj.getRates().getTHB();
+                return AppRun.apiCurrencyObject.getRates().getTHB();
 
             case "TRY":
-                return AppRun.testObj.getRates().getTRY();
+                return AppRun.apiCurrencyObject.getRates().getTRY();
 
             case "TWD":
-                return AppRun.testObj.getRates().getTWD();
+                return AppRun.apiCurrencyObject.getRates().getTWD();
 
             case "UAH":
-                return AppRun.testObj.getRates().getUAH();
+                return AppRun.apiCurrencyObject.getRates().getUAH();
 
             case "USD":
-                return AppRun.testObj.getRates().getUSD();
+                return AppRun.apiCurrencyObject.getRates().getUSD();
 
             case "UYU":
-                return AppRun.testObj.getRates().getUYU();
+                return AppRun.apiCurrencyObject.getRates().getUYU();
 
             case "VND":
-                return AppRun.testObj.getRates().getVND();
+                return AppRun.apiCurrencyObject.getRates().getVND();
 
             case "ZAR":
-                return AppRun.testObj.getRates().getZAR();
+                return AppRun.apiCurrencyObject.getRates().getZAR();
 
             default:
                 return 0.0F;
