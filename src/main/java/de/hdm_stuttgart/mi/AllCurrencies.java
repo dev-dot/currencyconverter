@@ -22,7 +22,7 @@ class Currencies {
 
 public class AllCurrencies {
         static Currencies EUR = new Currencies("Euro", "EUR");
-        static Currencies AED = new Currencies("Emirati Dirham","VAE");
+        static Currencies AED = new Currencies("Emirati Dirham","AED");
         static Currencies ARS = new Currencies("Argentine Peso","ARS");
         static Currencies AUD = new Currencies("Australian Dollar","AUD");
         static Currencies BGN = new Currencies("Bulgarian Lew","BGN");

@@ -18,7 +18,8 @@ public class URLConnection {
 
     public static JsonObject getJsonobj(String httpCurrency) throws IOException {
 
-        // Setting URL
+// Setting URL
+
         String url_str = "https://api.exchangerate-api.com/v4/latest/" + httpCurrency;
 
 // Making Request
@@ -30,6 +31,7 @@ public class URLConnection {
         JsonParser jp = new JsonParser();
         JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
         jsonobj = root.getAsJsonObject();
+
 //Disconnecting
         request.disconnect();
 
