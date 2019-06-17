@@ -73,7 +73,7 @@ public class AllCurrencies {
         static Currencies UYU = new Currencies("Uruguayan Peso","UYU");
         static Currencies VND = new Currencies("Dong","VND");
         static Currencies ZAR = new Currencies("South African Rand","ZAR");
-        static Currencies emptyCurrency = new Currencies("","");
+        static Currencies emptyCurrency = new Currencies("not set","");
 
       static Currencies[] all ={emptyCurrency,EUR,AED,ARS,AUD,BGN,BRL,BSD,CAD,CHF,CLP,CNY,COP,CZK,DKK,DOP,EGP,FJD,GBP,GTQ,HKD,HRK,HUF,IDR,ILS,INR,ISK,
                                 JPY,KRW,KZT,MXN,MYR,NOK,NZD,PAB,PEN,PHP,PKR,PLN,PYG,RON,RUB,SAR,SEK,SGD,THB,TRY,TWD,UAH,USD,UYU,VND,ZAR};
@@ -96,12 +96,6 @@ public class AllCurrencies {
                                 return counter;
                         }
                 }
-                if (counter==0){
-                        Print.commandInput();
-                        String str2 = input.next();
-                        input.reset();
-                        getPosition(str2);
-                }else {}
                 return counter;
       }
 }

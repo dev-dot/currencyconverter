@@ -44,10 +44,6 @@ public class Print {
 
     }
 
-    public static void commandInput(){
-        System.out.println("Wrong input, please re-enter your currency: ");
-    }
-
     public static void commandCurrency(){
         System.out.println("Enter a currency's name or part of it(>xxx< to exit): ");
     }
@@ -103,7 +99,11 @@ public class Print {
             System.out.println("Select a currency by index: ");
             int entry = input.nextInt();
             input.reset();
-            return array[entry];
+            if (entry >= array.length || entry < 0){
+                return AllCurrencies.emptyCurrency;
+            }else {
+                return array[entry];
+            }
         }else {
             return AllCurrencies.emptyCurrency;
         }
