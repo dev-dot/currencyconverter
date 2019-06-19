@@ -476,9 +476,4 @@ public class Rates {
   this.ZAR = ZAR;
  }
 
-    @Override
-    public String toString() {
-        return
-                "AED=" + AED;
-    }
 }

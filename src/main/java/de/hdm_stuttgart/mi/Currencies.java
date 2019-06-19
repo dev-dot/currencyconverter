@@ -36,7 +36,7 @@ class Currencies {
     static Currencies DKK = new Currencies("Danish Krone", "DKK");
     static Currencies DOP = new Currencies("Dominican Peso", "DOP");
     static Currencies EGP = new Currencies("Egyptian Pound", "EGP");
-    static Currencies FJD = new Currencies("Fijian Dollar ", "FJD");
+    static Currencies FJD = new Currencies("Fijian Dollar", "FJD");
     static Currencies GBP = new Currencies("British Pound", "GBP");
     static Currencies GTQ = new Currencies("Quetzal", "GTQ");
     static Currencies HKD = new Currencies("Hong Kong Dollar", "HKD");
