@@ -3,7 +3,7 @@ package de.hdm_stuttgart.mi;
 public class Calculation {
 
 
-    public static Double getCalculation(String tag, double amount){
+    public static double getCalculation(String tag, double amount){
 
         return amount * getCurrentRate(tag);
     }

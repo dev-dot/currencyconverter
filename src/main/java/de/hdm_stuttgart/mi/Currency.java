@@ -1,6 +1,5 @@
 package de.hdm_stuttgart.mi;
 
-import java.util.List;
 
 public class Currency {
 
