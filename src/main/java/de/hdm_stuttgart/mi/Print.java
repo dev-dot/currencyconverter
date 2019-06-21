@@ -58,11 +58,8 @@ public class Print {
 //      and returns if equal a preselected Currencies-array
 
     public static Currencies[] getChoice (String str) {
-        Scanner input = new Scanner(System.in);
         String[] currName = {"Dollar", "dol", "Peso", "pes", "Krone", "kro"};
         int countId = -1;
-        Currencies[] selection = {};
-        Currencies result;
         for (int i = 0; i < currName.length; i++) {
             if (currName[i].equalsIgnoreCase(str)) {
                 countId = i;
