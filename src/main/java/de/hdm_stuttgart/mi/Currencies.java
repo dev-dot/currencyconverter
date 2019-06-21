@@ -74,8 +74,8 @@ class Currencies {
     static Currencies ZAR = new Currencies("South African Rand", "ZAR");
     static Currencies emptyCurrency = new Currencies("not set", "");
 
-    static Currencies[] all = {emptyCurrency, EUR, AED, ARS, AUD, BGN, BRL, BSD, CAD, CHF, CLP, CNY, COP, CZK, DKK, DOP, EGP, FJD, GBP, GTQ, HKD, HRK, HUF, IDR, ILS, INR, ISK,
-            JPY, KRW, KZT, MXN, MYR, NOK, NZD, PAB, PEN, PHP, PKR, PLN, PYG, RON, RUB, SAR, SEK, SGD, THB, TRY, TWD, UAH, USD, UYU, VND, ZAR};
+    static Currencies[] all = { emptyCurrency, EUR, AED, ARS, AUD, BGN, BRL, BSD, CAD, CHF, CLP, CNY, COP, CZK, DKK, DOP, EGP, FJD, GBP, GTQ, HKD, HRK, HUF, IDR, ILS, INR, ISK,
+                                JPY, KRW, KZT, MXN, MYR, NOK, NZD, PAB, PEN, PHP, PKR, PLN, PYG, RON, RUB, SAR, SEK, SGD, THB, TRY, TWD, UAH, USD, UYU, VND, ZAR};
     static Currencies[] dol = {AUD, BSD, CAD, FJD, HKD, NZD, SGD, TWD, USD};
     static Currencies[] pes = {ARS, CLP, COP, DOP, MXN, PHP, UYU};
     static Currencies[] kro = {CZK, DKK, ISK, NOK, SEK};
