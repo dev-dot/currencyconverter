@@ -14,7 +14,7 @@ public class TestCalculation {
   @Test
     public void testGetCalculation() throws IOException{
       //gettin JsonObject from File to test method "getCalculation" located in class "Calculation"
-      String filepath = new File("src\\main\\resources\\TestJson.json").getAbsolutePath();
+      String filepath = new File("src/main/resources/TestJson.json").getAbsolutePath();
       JsonParser jp = new JsonParser();
       JsonElement root = jp.parse(new FileReader(filepath));
       JsonObject jsonobj = root.getAsJsonObject();
