@@ -17,7 +17,7 @@ with an index number by what you might choose a specific currency. If you enter 
 from the main menu.
 
 System requirements:
+1.  Internet Connection
+2.  MacOS X/ Linux
+3.  Java Runtime Environment
 
-MacOS X/ Linux
-Java Runtime Environment
-Internet Connection
