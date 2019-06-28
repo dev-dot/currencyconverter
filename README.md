@@ -19,3 +19,5 @@ from the main menu.
 System requirements:
 
 MacOS X/ Linux
+Java Runtime Environment
+Internet Connection
